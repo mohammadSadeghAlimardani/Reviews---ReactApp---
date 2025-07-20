@@ -1,0 +1,512 @@
+/* =========== CSS Reset =========== */
+/* ================================= */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ===================================== */
+/* ===================================== */
+/* =========== Global Styles =========== */
+/* ===================================== */
+/* ===================================== */
+
+h1{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.17rem;
+}
+h4{
+    font-size: 1rem;
+}
+h5{
+    font-size: 0.83rem;
+}
+h6{
+    font-size: 0.67rem;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+/* =============== */
+/* ===== btn ===== */
+/* =============== */
+
+.btn{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn:has(.btn-block){
+    width: 100%;
+}
+/* === primary btn === */
+/* =================== */
+.btn.btn-primary{
+    background-color: #007BFF;
+    color: white;
+}
+.btn.btn-primary:hover{
+    background-color: #0069D9;
+}
+.btn.btn-outline-primary{
+    background-color: white;
+    border: 1px solid #007BFF;
+    color: #007BFF;
+}
+.btn.btn-outline-primary:hover{
+    background-color: #007BFF;
+    color: white;
+}
+.btn.btn-inline-primary{
+    background-color: #007BFF;
+    border: 1px solid #007BFF;
+    color: white;
+}
+.btn.btn-inline-primary:hover{
+    background-color: white;
+    color: #007BFF;
+}
+/* === primary secondary === */
+/* ========================= */
+.btn.btn-secondary{
+    background-color: #6C757D;
+    color: white;
+}
+.btn.btn-secondary:hover{
+    background-color: #5A6268;
+}
+.btn.btn-outline-secondary{
+    background-color: white;
+    border: 1px solid #6C757D;
+    color: #6C757D;
+}
+.btn.btn-outline-secondary:hover{
+    background-color: #6C757D;
+    color: white;
+}
+.btn.btn-inline-secondary{
+    background-color: #6C757D;
+    border: 1px solid #6C757D;
+    color: white;
+}
+.btn.btn-inline-secondary:hover{
+    background-color: white;
+    color: #6C757D;
+}
+/* === primary success === */
+/* ======================= */
+.btn.btn-success{
+    background-color: #28A745;
+    color: white;
+}
+.btn.btn-success:hover{
+    background-color: #218838;
+}
+.btn.btn-outline-success{
+    background-color: white;
+    border: 1px solid #28A745;
+    color: #28A745;
+}
+.btn.btn-outline-success:hover{
+    background-color: #28A745;
+    color: white;
+}
+.btn.btn-inline-success{
+    background-color: #28A745;
+    border: 1px solid #28A745;
+    color: white;
+}
+.btn.btn-inline-success:hover{
+    background-color: white;
+    color: #28A745;
+}
+/* === primary danger === */
+/* ====================== */
+.btn.btn-danger{
+    background-color: #DC3545;
+    color: white;
+}
+.btn.btn-danger:hover{
+    background-color: #C82333;
+}
+.btn.btn-outline-danger{
+    background-color: white;
+    border: 1px solid #DC3545;
+    color: #DC3545;
+}
+.btn.btn-outline-danger:hover{
+    background-color: #DC3545;
+    color: white;
+}
+.btn.btn-inline-danger{
+    background-color: #DC3545;
+    border: 1px solid #DC3545;
+    color: white;
+}
+.btn.btn-inline-danger:hover{
+    background-color: white;
+    color: #DC3545;
+}
+/* === primary warning === */
+/* ======================= */
+.btn.btn-warning{
+    background-color: #FFC107;
+    color: black;
+}
+.btn.btn-warning:hover{
+    background-color: #E0A800;
+}
+.btn.btn-outline-warning{
+    background-color: white;
+    border: 1px solid #FFC107;
+    color: #FFC107;
+}
+.btn.btn-outline-warning:hover{
+    background-color: #FFC107;
+    color: black;
+}
+.btn.btn-inline-warning{
+    background-color: #FFC107;
+    border: 1px solid #FFC107;
+    color: white;
+}
+.btn.btn-inline-warning:hover{
+    background-color: white;
+    color: #FFC107;
+}
+/* === primary info === */
+/* ==================== */
+.btn.btn-info{
+    background-color: #17A2B8;
+    color: white;
+}
+.btn.btn-info:hover{
+    background-color: #138496;
+}
+.btn.btn-outline-info{
+    background-color: white;
+    border: 1px solid #17A2B8;
+    color: #17A2B8;
+}
+.btn.btn-outline-info:hover{
+    background-color: #17A2B8;
+    color: white;
+}
+.btn.btn-inline-info{
+    background-color: #17A2B8;
+    border: 1px solid #17A2B8;
+    color: white;
+}
+.btn.btn-inline-info:hover{
+    background-color: white;
+    color: #17A2B8;
+}
+/* === primary light === */
+/* ===================== */
+.btn.btn-light{
+    background-color: #F8F9FA;
+    color: black;
+}
+.btn.btn-light:hover{
+    background-color: #E2E6EA;
+}
+.btn.btn-outline-light{
+    background-color: white;
+    border: 1px solid #E2E6EA;
+    color: #E2E6EA;
+}
+.btn.btn-outline-light:hover{
+    background-color: #F8F9FA;
+    color: black;
+}
+.btn.btn-inline-light{
+    background-color: #F8F9FA;
+    border: 1px solid #E2E6EA;
+    color: black;
+}
+.btn.btn-inline-light:hover{
+    background-color: white;
+    color: #E2E6EA;
+}
+/* === primary dark === */
+/* ==================== */
+.btn.btn-dark{
+    background-color: #343A40;
+    color: white;
+}
+.btn.btn-dark:hover{
+    background-color: #23272B;
+}
+.btn.btn-outline-dark{
+    background-color: white;
+    border: 1px solid #343A40;
+    color: #343A40;
+}
+.btn.btn-outline-dark:hover{
+    background-color: #343A40;
+    color: white;
+}
+.btn.btn-inline-dark{
+    background-color: #343A40;
+    border: 1px solid #343A40;
+    color: white;
+}
+.btn.btn-inline-dark:hover{
+    background-color: white;
+    color: #343A40;
+}
+
+
+/* ============== */
+/* ==== Link ==== */
+/* ============== */
+
+.link{
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.link.link-primary{
+    color: #007BFF;
+}
+.link.link-secondary{
+    color: #6C757D;
+}
+.link.link-success{
+    color: #28A745;
+}
+.link.link-danger{
+    color: #DC3545;
+}
+.link.link-warning{
+    color: #FFC107;
+}
+.link.link-info{
+    color: #17A2B8;
+}
+.link.link-light{
+    color: #E2E6EA;
+}
+.link.link-dark{
+    color: #343A40;
+}
+
+/* ================= */
+/* ===== Alert ===== */
+/* ================= */
+
+.alert{
+    text-transform: capitalize;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+.alert.alert-primary{
+    background-color: #CCE5FF;
+    border: 1px solid #B7D8FD;
+}
+.alert.alert-secondary{
+    background-color: #E2E3E5;
+    border: 1px solid #D6D8DB;
+}
+.alert.alert-success{
+    background-color: #D4EDDA;
+    border: 1px solid #C3E6CB;
+}
+.alert.alert-danger{
+    background-color: #F8D7DA;
+    border: 1px solid #F5C6CB;
+}
+.alert.alert-warning{
+    background-color: #FFF3CD;
+    border: 1px solid #FFEEBA;
+}
+.alert.alert-info{
+    background-color: #D1ECF1;
+    border: 1px solid #BEE5EB;
+}
+.alert.alert-light{
+    background-color: #FEFEFE;
+    border: 1px solid #FDFDFE;
+}
+.alert.alert-dark{
+    background-color: #D6D8D9;
+    border: 1xp solid #C6C8CA;
+}
+
+
+/* ================== */
+/* ===== Inputs ===== */
+/* ================== */
+
+input.input-control{
+    box-shadow: 0 0 1px 1px #23272B;
+    padding: 0.50rem 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2xp;
+}
+input.input-control:focus{
+    box-shadow: 0 0 5px 1px #0069D9;
+}
+input.input-control::placeholder{
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2xp;
+}
+
+
+/* ========================== */
+/* ====== Error Message ===== */
+/* ========================== */
+
+.error-message{
+    text-align: center;
+    color: red;
+}
+
+
+/* ============================ */
+/* ====== Loading Message ===== */
+/* ============================ */
+
+/* parent element */
+.circle-loading{
+    text-align: center;
+}
+/* child element */
+.circle-loading-icon{
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border: 10px solid #BBBDBF;
+    border-left: 10px solid transparent;
+    text-align: center;
+    color: #BBBDBF;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(72deg);
+    }
+    40%{
+        transform: rotate(144deg);
+    }
+    60%{
+        transform: rotate(216deg);
+    }
+    80%{
+        transform: rotate(288deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* ======================== */
+/* ====== Grid System ===== */
+/* ======================== */
+
+.section-center{
+    width: 90%;
+    margin: 0 auto;
+}
+/* === column-3 === */
+.column-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width:992px){
+    .column-3{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:768px){
+    .column-3{
+        grid-template-columns: 1fr;
+    }
+}
+/* === column-2 === */
+.column-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width:768px){
+    .column-2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+/* === column-1 === */
+.column-1{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* project : */
